@@ -1,3 +1,5 @@
+//exporting and creating new file so this file first letter will be * capital
+
 npm = node pacage manager
 npx = node pacage excutor
 start => npx create-react-app 01basicreact
@@ -6,3 +8,18 @@ start => npx create-react-app 01basicreact
 start * =>npm create vite@latest
 =>npm install // because of node folder are not present in this file
 => npm run dev  // dev vali script run
+
+****************************************************************************
+object trited  * username will be object
+import Sank from "./sank";
+function App() {
+  const username = <h1>sanket b wakshe</h1>
+  return (
+    <>
+    <h1>my name is : {username}</h1>
+    <Sank />
+    </>
+  );
+}
+
+export default App;
