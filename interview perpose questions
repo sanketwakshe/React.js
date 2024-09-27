@@ -1,0 +1,45 @@
+ //let counter = 15
+ let [counter,setCounter] = useState(14)
+
+  const addValue = function(){
+    console.log('clicked' ,counter);
+    //counter = counter +1
+    setCounter(counter+1);// no of conunters not changre value the will bww same =15
+    
+    setCounter(prevCounter => prevCounter+1);
+    setCounter(prevCounter => prevCounter+1);
+    setCounter(prevCounter => prevCounter+1); //=> output direct will be 17
+}
+const RemoveValue = function(){
+  setCounter(counter-1)
+}
+  return (
+    
+    <>
+    <h1>sanket wakshe</h1>
+    <h2>Counter value : {counter}</h2>
+    <button onClick={addValue}>Add Value</button>
+    <br/>
+    <button onClick={RemoveValue}>Remove  Value</button>
+    </>
+  )
+}
+
+
+//password generator 
+callback function will be use
+
+
+
+
+hooks uses******************************************
+usestae = ui varti value update karnyasathi
+usecallback = call exicute karo mothe function run ksrto
+usseffect = page reload zhalyav pahila rund ani array madhe asnary she shedshad kelyav run honar
+useRef = ekandy function madhun dusryal call karacha asel ec = button input madhun copy
+
+
+****************copy any text logic
+  const copyPassword = useCallback(()=>{
+    window.navigator.clipboard.writeText(password)
+  },[password]) 
